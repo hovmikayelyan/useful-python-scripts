@@ -1,3 +1,14 @@
+#!/usr/bin/env python3
+# @author hovmikayelyan
+
+# This script allows us to make a bot which does funny things with Instagram.
+# Needs the username and password of your account.
+#
+# If running the script, throws an error `there is no module instabot in your machine`, then run:
+# pip install instabot
+
+# Thank you!
+
 # Import instabot library
 from instabot import Bot
 

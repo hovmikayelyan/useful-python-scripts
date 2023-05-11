@@ -1,11 +1,23 @@
-#!/usr/bin/env python
-# pylint: disable=unused-argument, wrong-import-position
-# This program is dedicated to the public domain under the CC0 license.
+#!/usr/bin/env python3
+# @author hovmikayelyan
+
+# This script allows us to make a bot and use it in Telegram.
+# Needs the token of your application.
+#
+# Main functionality of the bot, is >
+# accepts a link, downloads it and send to the user
+#
+# If running the script, throws an error `there is no module '...' in your machine`, then run:
+# pip install python-telegram-bot --upgrade
+# pip install requests
+
+# Thank you!
 
 """
 Basic example for a bot that uses inline keyboards. For an in-depth explanation, check out
  https://github.com/python-telegram-bot/python-telegram-bot/wiki/InlineKeyboard-Example.
 """
+
 from telegram.ext import Application, CallbackQueryHandler, CommandHandler, ContextTypes, MessageHandler, filters
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram import __version__ as TG_VER
@@ -15,7 +27,6 @@ import re
 import os
 
 TOKEN = ""
-
 
 try:
     from telegram import __version_info__
